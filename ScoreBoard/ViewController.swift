@@ -75,7 +75,15 @@ class ViewController: UIViewController {
             , brightness: 1.0
             , alpha: 1.0)
         
-        view.backgroundColor = UIColor(hue: 1.0 - hue
+        let hue2:CGFloat = {
+            let h = hue + 0.5
+            if h > 1.0 {
+                return h - 1.0
+            } else {
+                return h
+            }
+        }()
+        view.backgroundColor = UIColor(hue: hue2
             , saturation: 0.75
             , brightness: 1.0
             , alpha: 1.0)
