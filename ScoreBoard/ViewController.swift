@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var score:Int = 0
     
-    
+    override var prefersStatusBarHidden: Bool {get {return true}}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +31,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func prefersStatusBarHidden() -> Bool {
-        return true
     }
 
     
@@ -55,7 +51,7 @@ class ViewController: UIViewController {
     func updateLabel() {
         numberLabel.text = "\(score)"
         
-        let fontFamilyNames = UIFont.familyNames()
+        let fontFamilyNames = UIFont.familyNames
         var rand1 = Int(arc4random()%UInt32(fontFamilyNames.count))
         var familyName = fontFamilyNames[rand1]
         var names = UIFont.fontNames(forFamilyName: familyName )
