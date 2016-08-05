@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var teamImageView: UIImageView!
+    @IBOutlet weak var teamSelectorLabel: UILabel!
+    @IBOutlet weak var teamSelectorCenterConstraint: NSLayoutConstraint!
+    var teamSelectorLabelHue = CGFloat(0.0)
     
     var score:Int = 0
     
@@ -25,7 +29,15 @@ class ViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(tap_screen))
         view.addGestureRecognizer(tap)
         
+        let tapTeam = UITapGestureRecognizer(target: self, action: #selector(tap_team))
+        teamImageView.addGestureRecognizer(tapTeam)
         
+        timer_color()
+//        Timer.scheduledTimer(timeInterval: 1.0
+//            , target: self
+//            , selector: #selector(timer_color)
+//            , userInfo: nil
+//            , repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +59,63 @@ class ViewController: UIViewController {
         updateLabel()
     }
     
+    func tap_team(tap: UIGestureRecognizer) {
+        let location = tap.location(in: teamImageView)
+        
+        if location.x < teamImageView.frame.width * 0.33 {
+            teamSelectorCenterConstraint.constant = -120
+        } else if location.x > teamImageView.frame.width * 0.66 {
+            teamSelectorCenterConstraint.constant = 120
+        } else {
+            teamSelectorCenterConstraint.constant = 0
+        }
+        
+        
+        
+        let fontFamilyNames = UIFont.familyNames
+        var rand1 = Int(arc4random()%UInt32(fontFamilyNames.count))
+        var familyName = fontFamilyNames[rand1]
+        var names = UIFont.fontNames(forFamilyName: familyName )
+        while names.count == 0 {
+            rand1 = Int(arc4random()%UInt32(fontFamilyNames.count))
+            familyName = fontFamilyNames[rand1]
+            names = UIFont.fontNames(forFamilyName: familyName )
+            
+        }
+        
+        
+        
+        let rand = Int(arc4random()%UInt32(names.count))
+        let fontName = names[rand]
+        
+        teamSelectorLabel.font = UIFont(name: fontName, size: 150)
+    }
+    
+    func timer_color() {
+        
+        teamSelectorLabelHue += 0.01
+        
+        while teamSelectorLabelHue > 1.0 {
+            teamSelectorLabelHue -= 1.0
+        }
+        
+        let newColor = UIColor(hue: self.teamSelectorLabelHue
+            , saturation: 0.75
+            , brightness: 1.0
+            , alpha: 1.0)
+        UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions(rawValue: 0), animations: {
+            
+            self.teamSelectorLabel.textColor = newColor
+            
+            }, completion: { finished in
+                
+                let deadlineTime = DispatchTime.now() + .seconds(1)
+                DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+                    self.timer_color()
+                }
+                
+        })
+    }
     
     func updateLabel() {
         numberLabel.text = "\(score)"
