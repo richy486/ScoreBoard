@@ -13,21 +13,37 @@
 		B97A3E021D52E34D002C7D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97A3E001D52E34D002C7D0E /* Main.storyboard */; };
 		B97A3E041D52E34D002C7D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97A3E031D52E34D002C7D0E /* Assets.xcassets */; };
 		B97A3E071D52E34D002C7D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97A3E051D52E34D002C7D0E /* LaunchScreen.storyboard */; };
+		CA4942D71D54E3F500E2180B /* Main_tvOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4942D41D54DC3400E2180B /* Main_tvOS.storyboard */; };
+		CA4FDD5F1D54D1D800874F11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97A3DFE1D52E34D002C7D0E /* ViewController.swift */; };
+		CA4FDD601D54D1D800874F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97A3DFC1D52E34D002C7D0E /* AppDelegate.swift */; };
+		CA4FDD631D54D1D800874F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97A3E051D52E34D002C7D0E /* LaunchScreen.storyboard */; };
+		CA4FDD641D54D1D800874F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97A3E031D52E34D002C7D0E /* Assets.xcassets */; };
+		CA4FDD661D54D1D800874F11 /* Ver.png in Resources */ = {isa = PBXBuildFile; fileRef = B92F97F81D54BC00006CE447 /* Ver.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B92F97F81D54BC00006CE447 /* Ver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ver.png; sourceTree = "<group>"; };
-		B97A3DF91D52E34D002C7D0E /* ScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97A3DF91D52E34D002C7D0E /* ScoreBoard iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScoreBoard iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97A3DFC1D52E34D002C7D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B97A3DFE1D52E34D002C7D0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B97A3E011D52E34D002C7D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B97A3E031D52E34D002C7D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B97A3E061D52E34D002C7D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B97A3E081D52E34D002C7D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97A3E081D52E34D002C7D0E /* Info_iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_iOS.plist; sourceTree = "<group>"; };
+		CA4942D51D54DC3400E2180B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_tvOS.storyboard; sourceTree = "<group>"; };
+		CA4FDD6A1D54D1D800874F11 /* ScoreBoard tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ScoreBoard tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4FDD6C1D54D25D00874F11 /* Info_tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_tvOS.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B97A3DF61D52E34D002C7D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4FDD611D54D1D800874F11 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,7 +72,8 @@
 		B97A3DFA1D52E34D002C7D0E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B97A3DF91D52E34D002C7D0E /* ScoreBoard.app */,
+				B97A3DF91D52E34D002C7D0E /* ScoreBoard iOS.app */,
+				CA4FDD6A1D54D1D800874F11 /* ScoreBoard tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +84,11 @@
 				B97A3DFC1D52E34D002C7D0E /* AppDelegate.swift */,
 				B97A3DFE1D52E34D002C7D0E /* ViewController.swift */,
 				B97A3E001D52E34D002C7D0E /* Main.storyboard */,
+				CA4942D41D54DC3400E2180B /* Main_tvOS.storyboard */,
 				B97A3E031D52E34D002C7D0E /* Assets.xcassets */,
 				B97A3E051D52E34D002C7D0E /* LaunchScreen.storyboard */,
-				B97A3E081D52E34D002C7D0E /* Info.plist */,
+				B97A3E081D52E34D002C7D0E /* Info_iOS.plist */,
+				CA4FDD6C1D54D25D00874F11 /* Info_tvOS.plist */,
 				B92F97F71D54BC00006CE447 /* Images */,
 			);
 			path = ScoreBoard;
@@ -78,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B97A3DF81D52E34D002C7D0E /* ScoreBoard */ = {
+		B97A3DF81D52E34D002C7D0E /* ScoreBoard iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B97A3E0B1D52E34D002C7D0E /* Build configuration list for PBXNativeTarget "ScoreBoard" */;
+			buildConfigurationList = B97A3E0B1D52E34D002C7D0E /* Build configuration list for PBXNativeTarget "ScoreBoard iOS" */;
 			buildPhases = (
 				B97A3DF51D52E34D002C7D0E /* Sources */,
 				B97A3DF61D52E34D002C7D0E /* Frameworks */,
@@ -90,9 +109,26 @@
 			);
 			dependencies = (
 			);
-			name = ScoreBoard;
+			name = "ScoreBoard iOS";
 			productName = ScoreBoard;
-			productReference = B97A3DF91D52E34D002C7D0E /* ScoreBoard.app */;
+			productReference = B97A3DF91D52E34D002C7D0E /* ScoreBoard iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA4FDD5D1D54D1D800874F11 /* ScoreBoard tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4FDD671D54D1D800874F11 /* Build configuration list for PBXNativeTarget "ScoreBoard tvOS" */;
+			buildPhases = (
+				CA4FDD5E1D54D1D800874F11 /* Sources */,
+				CA4FDD611D54D1D800874F11 /* Frameworks */,
+				CA4FDD621D54D1D800874F11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ScoreBoard tvOS";
+			productName = ScoreBoard;
+			productReference = CA4FDD6A1D54D1D800874F11 /* ScoreBoard tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,6 +147,9 @@
 						DevelopmentTeamName = "Richard Adem";
 						ProvisioningStyle = Automatic;
 					};
+					CA4FDD5D1D54D1D800874F11 = {
+						DevelopmentTeam = KWV3LMSGNJ;
+					};
 				};
 			};
 			buildConfigurationList = B97A3DF41D52E34D002C7D0E /* Build configuration list for PBXProject "ScoreBoard" */;
@@ -126,7 +165,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B97A3DF81D52E34D002C7D0E /* ScoreBoard */,
+				B97A3DF81D52E34D002C7D0E /* ScoreBoard iOS */,
+				CA4FDD5D1D54D1D800874F11 /* ScoreBoard tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +183,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA4FDD621D54D1D800874F11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4942D71D54E3F500E2180B /* Main_tvOS.storyboard in Resources */,
+				CA4FDD631D54D1D800874F11 /* LaunchScreen.storyboard in Resources */,
+				CA4FDD641D54D1D800874F11 /* Assets.xcassets in Resources */,
+				CA4FDD661D54D1D800874F11 /* Ver.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,6 +203,15 @@
 			files = (
 				B97A3DFF1D52E34D002C7D0E /* ViewController.swift in Sources */,
 				B97A3DFD1D52E34D002C7D0E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4FDD5E1D54D1D800874F11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4FDD5F1D54D1D800874F11 /* ViewController.swift in Sources */,
+				CA4FDD601D54D1D800874F11 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +232,14 @@
 				B97A3E061D52E34D002C7D0E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CA4942D41D54DC3400E2180B /* Main_tvOS.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA4942D51D54DC3400E2180B /* Base */,
+			);
+			name = Main_tvOS.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -221,7 +289,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -261,7 +328,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -270,11 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ScoreBoard/Info.plist;
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
+				INFOPLIST_FILE = ScoreBoard/Info_iOS.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = richy486.ScoreBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -282,11 +350,47 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ScoreBoard/Info.plist;
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
+				INFOPLIST_FILE = ScoreBoard/Info_iOS.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = richy486.ScoreBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA4FDD681D54D1D800874F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
+				INFOPLIST_FILE = ScoreBoard/Info_tvOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richy486.ScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		CA4FDD691D54D1D800874F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = KWV3LMSGNJ;
+				INFOPLIST_FILE = ScoreBoard/Info_tvOS.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = richy486.ScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
 		};
@@ -302,11 +406,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B97A3E0B1D52E34D002C7D0E /* Build configuration list for PBXNativeTarget "ScoreBoard" */ = {
+		B97A3E0B1D52E34D002C7D0E /* Build configuration list for PBXNativeTarget "ScoreBoard iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B97A3E0C1D52E34D002C7D0E /* Debug */,
 				B97A3E0D1D52E34D002C7D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4FDD671D54D1D800874F11 /* Build configuration list for PBXNativeTarget "ScoreBoard tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4FDD681D54D1D800874F11 /* Debug */,
+				CA4FDD691D54D1D800874F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

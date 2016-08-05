@@ -18,7 +18,11 @@ class ViewController: UIViewController {
     
     var score:Int = 0
     
-    override var prefersStatusBarHidden: Bool {get {return true}}
+    
+    #if TARGET_OS_IOS
+        override var prefersStatusBarHidden: Bool {get {return true}}
+    #endif
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,10 @@ class ViewController: UIViewController {
 //            , userInfo: nil
 //            , repeats: true)
     }
+    
+//    override func prefersStatusBarHidden() -> Bool {
+//        return true
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -63,9 +71,9 @@ class ViewController: UIViewController {
         let location = tap.location(in: teamImageView)
         
         if location.x < teamImageView.frame.width * 0.33 {
-            teamSelectorCenterConstraint.constant = -120
+            teamSelectorCenterConstraint.constant = -teamImageView.frame.size.width * 0.25
         } else if location.x > teamImageView.frame.width * 0.66 {
-            teamSelectorCenterConstraint.constant = 120
+            teamSelectorCenterConstraint.constant = teamImageView.frame.size.width * 0.25
         } else {
             teamSelectorCenterConstraint.constant = 0
         }

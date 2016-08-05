@@ -12,13 +12,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScoreBoard_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="1qE-5D-hOp">
@@ -40,13 +40,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ylw-1h-E9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EUy-cd-M0Z"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1qE-5D-hOp" secondAttribute="bottom" id="KkG-O6-lEi"/>
                             <constraint firstItem="ylw-1h-E9j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="MYu-SN-BsD"/>
                             <constraint firstItem="1qE-5D-hOp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TKe-TX-9d9"/>
                             <constraint firstItem="cJC-hB-nXU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="aRh-2Y-YPA"/>
                             <constraint firstAttribute="trailing" secondItem="1qE-5D-hOp" secondAttribute="trailing" id="auM-Fr-d3V"/>
                             <constraint firstItem="cJC-hB-nXU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-20" id="iSw-YQ-IMh"/>
                             <constraint firstItem="ylw-1h-E9j" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.33" id="nKf-Mg-iBk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1qE-5D-hOp" secondAttribute="bottom" id="vPD-gY-RYC"/>
                             <constraint firstItem="1qE-5D-hOp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zsw-Po-BsH"/>
                         </constraints>
                     </view>

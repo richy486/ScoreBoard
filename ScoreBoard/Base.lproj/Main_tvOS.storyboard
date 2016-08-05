@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9lD-rX-jwu">
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qds-Tz-kar">
+            <objects>
+                <viewController id="9lD-rX-jwu" customClass="ViewController" customModule="ScoreBoard_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vri-pX-Zyp"/>
+                        <viewControllerLayoutGuide type="bottom" id="wjh-tT-Fcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Qs-LC-XeX">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-tx-IgU">
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ver" translatesAutoresizingMaskIntoConstraints="NO" id="Lpv-IX-Dtk">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lpv-IX-Dtk" secondAttribute="height" multiplier="4.09859" id="FMq-UZ-mIr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHj-6c-hzJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZHj-6c-hzJ" firstAttribute="centerX" secondItem="8Qs-LC-XeX" secondAttribute="centerX" constant="120" id="1UM-Jh-b7M"/>
+                            <constraint firstItem="bTi-tx-IgU" firstAttribute="leading" secondItem="8Qs-LC-XeX" secondAttribute="leading" id="5fZ-nB-Xrv"/>
+                            <constraint firstItem="Lpv-IX-Dtk" firstAttribute="top" secondItem="Vri-pX-Zyp" secondAttribute="bottom" constant="10" id="6tN-rX-b5W"/>
+                            <constraint firstAttribute="trailing" secondItem="bTi-tx-IgU" secondAttribute="trailing" id="QPw-Yu-ByY"/>
+                            <constraint firstItem="ZHj-6c-hzJ" firstAttribute="top" secondItem="Vri-pX-Zyp" secondAttribute="bottom" constant="10" id="SNI-Hv-rRc"/>
+                            <constraint firstItem="wjh-tT-Fcd" firstAttribute="top" secondItem="bTi-tx-IgU" secondAttribute="bottom" id="geP-dH-ZIS"/>
+                            <constraint firstItem="bTi-tx-IgU" firstAttribute="top" secondItem="Vri-pX-Zyp" secondAttribute="bottom" id="gn6-aq-erO"/>
+                            <constraint firstItem="Lpv-IX-Dtk" firstAttribute="centerX" secondItem="8Qs-LC-XeX" secondAttribute="centerX" id="nil-8S-cPm"/>
+                            <constraint firstItem="Lpv-IX-Dtk" firstAttribute="width" secondItem="8Qs-LC-XeX" secondAttribute="width" multiplier="0.33" id="tau-7b-1up"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="bTi-tx-IgU" id="5eU-F8-Uiz"/>
+                        <outlet property="teamSelectorCenterConstraint" destination="1UM-Jh-b7M" id="Dw5-6e-Ez7"/>
+                        <outlet property="teamSelectorLabel" destination="ZHj-6c-hzJ" id="cWq-GF-X51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7V-wj-g0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ver" width="873" height="213"/>
+    </resources>
+</document>
